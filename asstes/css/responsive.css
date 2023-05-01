@@ -1,0 +1,197 @@
+/* XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) {
+
+}
+
+/* X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) and (max-width:1399.98px) {
+    
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width:1199.98px) {
+   /*about section start*/
+   #about .about_img img {
+    margin-top: 53%;
+}
+   #about .about_img::after {
+    height: 46%;
+    top: 35%;
+}
+   /*about section end*/
+}
+
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width:991.98px) {
+    #mynav ul li .nav_ancor {
+        text-align: center;
+        margin-left: 45%;
+    }
+    #mynav .nav_icon_menu button {
+        padding-left: 20px;
+    }
+    #mynav ol, ul {
+        list-style-type: none;
+        margin-left: 216px;
+    }
+
+    /*banner section start*/
+    #banner .inner_container .banner_icon a {
+        margin-left: -56%;
+        margin-right: 15%;
+    }
+    #banner .banner_item .banner_img img {
+        visibility: hidden;
+    }
+    /*banner section end*/
+    /*about section start*/
+    #about .about_info .about_intro h3 {
+        margin-left: 39%;
+    }
+    #about .about_img::after {
+        top: 31%;
+    }
+    /*about section end*/
+    /*skill section start*/
+    #skill h2 {
+        margin-left: 37%;
+    }
+    /*skill section end*/
+    /*project section start*/
+    #project h3 {
+        margin-left: 34%;
+    }
+    #project .projects_slider .projects_slider_dots {
+        margin-right: 33%;
+    }
+    /*project section end*/
+        
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width:767.98px) {
+    #mynav ul li .nav_ancor {
+        text-align: center;
+        margin-left: 45%;
+    }
+    #mynav .nav_icon_menu button {
+        padding-left: 20px;
+    }
+    #mynav ol, ul {
+        list-style-type: none;
+        margin-left: 216px;
+    }
+
+    /*back-top section start*/
+    #up {
+        margin-right: 7%;
+    }
+    /*back-top section end*/
+
+    /*banner section start*/
+    #banner .inner_container .banner_icon a {
+        margin-left: -56%;
+        margin-right: 15%;
+    }
+    #banner .banner_item .banner_img img {
+        visibility: hidden;
+    }
+    /*banner section end*/
+    /*about section start*/
+    #about .about_info .about_intro h3 {
+        margin-left: 39%;
+    }
+    #about .about_img::after {
+        top: 31%;
+    }
+    /*about section end*/
+    /*skill section start*/
+    #skill h2 {
+        margin-left: 37%;
+    }
+    /*skill section end*/
+    /*project section start*/
+    #project h3 {
+        margin-left: 34%;
+    }
+    #project .projects_slider .projects_slider_dots {
+        margin-right: 33%;
+    }
+    /*project section end*/
+}
+
+
+/* Extra Small devices (landscape phones, 576px and up) */
+
+@media (min-width:310px) and (max-width:575.98px){
+    #mynav ul li .nav_ancor {
+        text-align: center;
+        margin-left: 45%;
+    }
+    #mynav .nav_icon_menu button {
+        padding-left: 20px;
+    }
+    #mynav ol, ul {
+        list-style-type: none;
+        margin-left: 216px;
+    }
+
+    /*back-top section start*/
+    #up {
+        margin-right: 20%;
+    }
+    /*back-top section end*/
+
+    /*banner section start*/
+    #banner .banner_item .banner_img img {
+        visibility: hidden;
+    }
+    #banner .inner_container .banner_icon a {
+        margin-left: -376%;
+        margin-right: 35%;
+        padding: 19px;
+    }
+    /*banner section end*/
+    /*about section start*/
+    #about .about_info .about_intro h3 {
+        margin-left: 24%;
+    }
+    #banner .banner_item .inner_container h1 span {
+        margin-right: 33%;
+        font-size: 57px;
+    }
+    #about .about_img::after {
+        top: 31%;
+    }
+    /*about section end*/
+    /*skill section start*/
+    #skill h2 {
+        margin-left: 23%;
+    }
+    /*skill section end*/
+    /*project section start*/
+    #project h3 {
+    margin-left: 13%;
+    }
+    #project .projects_slider .projects_slider_dots {
+        margin-right: 33%;
+    }
+    #project .projects_slider .projects_slider_dots li {
+        visibility: hidden;
+    }
+    /*project section end*/
+}
+
+@media (max-width:1199.98px){
+    #service{
+        background: #f0f0e8;
+    }
+}
+
+@media (max-width:575.98px){
+    
+    
+}
+@media (max-width:349.98px){
+}

@@ -1,0 +1,627 @@
+
+/*======== common css section start ========*/
+:root {
+  --primary-font: "Josefin Sans", sans-serif;
+  --scondary-font: "Poppins", sans-serif;
+  --primary-Text-Color: #11161e;
+  --common-white: #ffffff;
+  --primary-1st-Color: #ba0906;
+  --primary-2nd-Color: #e51300f9;
+  --primary-3d-Color: #f9fafd;
+  --BG-color: #f1f3f4;
+  --common-black: #000000;
+}
+.form-control:focus {
+  outline: 0;
+  box-shadow: none;
+}
+html,body {
+  font-family: var(--primary-font);
+  background-color: var(--common-white);
+  scroll-behavior: smooth;
+}
+
+p {
+  font-family: var(--scondary-font);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol,
+span,
+small {
+  margin: 0;
+  padding: 0;
+}
+ol,
+ul {
+  list-style-type: none;
+}
+a,
+a:hover {
+  text-decoration: none;
+}
+
+/* back-top css scetion start */
+#up{
+  padding: 10px;
+  font-size: 30px;
+  border-radius: 50%;
+  background: var(--primary-1st-Color);
+  color: var(--common-white);
+  border: none;
+  position: fixed;
+  right: 50px;
+  bottom: 50px;
+  cursor: pointer;
+  display: none;
+  z-index: 999999;
+}
+/* back-top css section end */
+/*==== nav css section start ====*/
+#mynav {
+  background: var(--common-black);
+  position: sticky;
+  top: 0;
+  right: 0;
+  z-index: 99999;
+}
+#mynav .navbar-brand img{
+  height: 70px;
+}
+#mynav ul li .nav_ancor{
+  width: fit-content;
+  font-size: 16px;
+  line-height: 26px;
+  color: var(--BG-color);
+  border-bottom: 0px solid transparent;
+  padding: 6px 18px;
+  margin: 0 15px;
+  position: relative;
+}
+#mynav ul li .nav_ancor::after{
+  content: "";
+  width: 0;
+  height: 3px;
+  background-color: var(--primary-1st-Color);
+  left: 0;
+  bottom: -6px;
+  position: absolute;
+  transition: .5s;
+}
+#mynav ul li .nav_ancor:hover::after,
+#mynav ul li .nav_ancor.active::after{
+  width: 100%;
+}
+
+/*==== nav css section end ====*/
+/*======== common css section rnd ========*/
+
+
+
+/*============= Home page start ================*/
+/* bannar css section start */
+#banner {
+  padding: 0 40px;
+  background-color: var(--common-black);
+}
+#banner .banner_item {
+  height: 700px;
+  background-size: cover !important;
+  background-position: center !important;
+  position: relative;
+  justify-content: space-between;
+  z-index: 99;
+}
+#banner .inner_container h4,
+#banner .inner_container h1,
+#banner .inner_container p,
+#banner .inner_container a {
+  color: var(--common-white);
+}
+#banner .banner_item .inner_container h4 {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 28px;
+  padding-bottom: 18px;
+  padding-left: 16px;
+}
+#banner .banner_item .inner_container h1 {
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 74px;
+  padding-bottom: 20px;
+  padding-left: 13px;
+}
+#banner .banner_item .inner_container h1 span{
+  color: var(--primary-2nd-Color);
+}
+#banner .banner_item .inner_container p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  padding-bottom: 15px;
+  padding-left: 13px;
+}
+#banner .banner_item .inner_container a {
+  display: block;
+  padding: 17px 35px;
+  background: var(--primary-1st-Color);
+  color: var(--common-white);
+  border-radius: 20px;
+  transition: 0.8s;
+}
+#banner .banner_item .inner_container button:hover a{
+  background: transparent;
+  color: var(--primary-1st-Color);
+  border: 2px solid var(--primary-1st-Color);
+}
+#banner .inner_container .banner_icon a {
+  color: var(--common-white);
+  background-color: transparent;
+  border: 1px solid var(--primary-2nd-Color);
+  border-radius: 50%;
+  font-size: 20px;
+  display: inline-block;
+  margin-right: 10px;
+  position: relative;
+  transition: 0.6s;
+}
+#banner .banner_item .banner_icon a:hover{
+  color: var(--primary-2nd-Color);
+  background-color: var(--common-black);
+  border-radius: 50%;
+  box-shadow: 2px 2px 2px 2px #444444;
+}
+#banner .banner_item .banner_img img{
+  height: 100%;
+  width: 100%;
+}
+
+/* banner css section end */
+/* about page shop css section start */
+#about {
+  padding-bottom: 5%;
+  background-color: var(--primary-3d-Color);
+  text-align: center;
+}
+#about .about_img{
+  position: relative;
+  z-index: 1;
+}
+#about .about_img img {
+  position: relative;
+  width: 50%;
+  max-height: 60%;
+  margin-top: 30%;
+  border-radius: 10px;
+  object-fit: cover;
+  object-position: center;
+  border: 5px solid var(--primary-1st-Color);
+}
+#about .about_img::after {
+  content: "";
+  position: absolute;
+  width: 45%;
+  height: 62%;
+  top: 25%;
+  left: 19%;
+  border-radius: 10px;
+  background-color: transparent;
+  background-color: var(--primary-1st-Color);
+  border: 9px solid var(--primary-1st-Color);
+  background-position: center;
+  z-index: -1;
+}
+#about .about_info .about_intro{
+  margin-top: 40%;
+}
+#about .about_info .about_intro h3 {
+  font-family: var(--primary-font);
+  font-weight: 700;
+  font-size: 36px;
+  color: var(--common-black);
+  border-bottom: 5px solid var(--primary-2nd-Color);
+  width: fit-content;
+  margin-left: 34%;
+  padding-bottom: 10px;
+  margin-bottom: 5%;
+}
+#about .about_info .about_intro h3 span{
+  color: var(--primary-1st-Color);
+}
+#about .about_info .about_intro p {
+  font-family: var(--scondary-font);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  color: var(--Paragraph-Color);
+  padding-bottom: 30px;
+  border-bottom: 2px solid var(--primary-2nd-Color);
+}
+#about .about_info .about_intro h2 {
+  font-family: var(--primary-font);
+  font-weight: 400;
+  line-height: 35px;
+  color: var(--Paragraph-Color);
+  padding: 20px;
+  padding-bottom: 30px;
+  border-bottom: 3px solid var(--primary-2nd-Color);
+}
+#about .about_info a {
+  display: inline-block;
+  text-align: center;
+  background-color: var(--primary-1st-Color);
+  color: var(--common-white);
+  border: 1px solid var(--primary-2nd-Color);
+  border-radius: 20px;
+  box-shadow: 2px 2px rgb(137, 128, 128);
+  padding: 14px 31px;
+  margin-top: 50px;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 30px;
+  transition: 0.5s;
+}
+#about .about_info a:hover{
+  background-color: transparent;
+  color: var(--primary-1st-Color);
+  border: 1px solid var(--primary-1st-Color);
+  box-shadow: 2px 2px 2px 2px rgb(235, 0, 0);
+}
+/* about page shop css scetion end */
+/*skill section start*/
+#skill{
+  margin-top: 5%;
+  margin-bottom: 5%;
+  transition: 0.8s;
+}
+#skill .skill_border{
+  position: relative;
+  z-index: 1;
+}
+
+#skill .skill_border::before,
+#skill .skill_border::after{
+  content: "";
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  box-sizing: border-box;
+  transition: 0.8s;
+  z-index: 99999;
+}
+#skill .skill_border::before{
+  border-left: 10px solid var(--primary-2nd-Color);
+  border-top: 10px solid var(--primary-2nd-Color);
+  width: 20%;
+  height: 40%;
+  left: -1%;
+}
+#skill .skill_border::after{
+  border-right: 10px solid var(--primary-2nd-Color);
+  border-bottom: 10px solid var(--primary-2nd-Color);
+  height: 30%;
+  width: 20%;
+  top: 70%;
+  left: 81%;
+  box-shadow: 5px 5px 2px 0px var(--primary-Text-Color);
+}
+#skill h2{
+  color: var(--common-black);
+  border-bottom: 5px solid var(--primary-2nd-Color);
+  width: fit-content;
+  font-family: var(--primary-font);
+  text-align: center;
+  font-weight: 700;
+  font-size: 40px;
+  margin-left: 45%;
+  margin-bottom: 5%;
+}
+#skill h2 span{
+  color: var(--primary-1st-Color);
+}
+#skill .skill .skills .info{
+  justify-content: space-between;
+}
+#skill .skill .skills h3,
+#skill .skill .skills h5{
+  color: var(--common-black);
+  text-align: center;
+  font-family: var(--primary-font);
+}
+#skill .skill .skills .inside{
+  background-color: var(--primary-3d-Color);
+  border: 3px solid var(--primary-1st-Color);
+  border-radius: 10px;
+  width: 100%;
+  height: 20px;
+}
+#skill .skill .skills .outside,
+#skill .skill .skills .outside3{
+  background-color: var(--primary-2nd-Color);
+  width: 100%;
+  border-radius: 10px;
+  height: 100%;
+}
+#skill .skill .skills .outside2{
+  background-color: var(--primary-2nd-Color);
+  width: 90%;
+  border-radius: 10px;
+  height: 100%;
+}
+#skill .skill .skills .outside4{
+  background-color: var(--primary-2nd-Color);
+  width: 70%;
+  border-radius: 10px;
+  height: 100%;
+}
+/*skill section end*/
+/*projects section start*/
+#project{
+  margin-top: 5%;
+  margin-bottom: 5%;
+  background-color: var(--primary-3d-Color);
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+#project h3{
+  color: var(--common-black);
+  border-bottom: 5px solid var(--primary-2nd-Color);
+  width: fit-content;
+  text-align: center;
+  font-family: var(--primary-font);
+  font-weight: 700;
+  font-size: 40px;
+  margin-left: 42%;
+  margin-bottom: 5%;
+}
+#project h3 span{
+  color: var(--primary-1st-Color);
+}
+
+#project .projects_intro .projects_info {
+  margin-top: 10%;
+  background-color: var(--common-black);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 400px;
+  padding-left: 40px;
+  position: relative;
+}
+#project .projects_intro .projects_info .overlay{
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  top: 100%;
+  bottom: 0px;
+  text-align: center;
+  background: linear-gradient( rgba(169, 6, 6, 0.592), rgba(147, 45, 5, 0.592),rgba(0, 0, 0, 0.592));
+  padding: 110px 80px;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.7s;
+}
+#project .projects_intro .projects_info .overlay h4{
+  color: var(--common-white);
+  font-size: 30px;
+  font-weight: 800;
+}
+#project .projects_intro .projects_info .overlay p{
+  color: var(--common-white);
+  font-family: var(--scondary-font);
+  font-size: 18px;
+}
+#project .projects_intro .projects_info .overlay button{
+  background-color: var(--common-black);
+  color: var(--common-white);
+  padding: 10%;
+  border-radius: 50%;
+  transition: 0.8s;
+}
+#project .projects_intro .projects_info .overlay button:hover{
+  background-color: var(--primary-3d-Color);
+  color: var(--primary-1st-Color);
+  border: 2px solid var(--primary-1st-Color);
+}
+#project .projects_intro .projects_info:hover .overlay{
+  top: 0;
+  opacity: 1;
+  visibility: visible;
+}
+#project .projects_slider .projects_slider_dots {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-top: 5%;
+}
+#project .projects_slider .projects_slider_dots li {
+  line-height: 0;
+  display: inline-block;
+  margin-right: 6px;
+}
+#project .projects_slider .projects_slider_dots li button {
+  border: none;
+  font-size: 0;
+  width: 16px;
+  height: 5px;
+  background: var(--common-black);
+  border-radius: 5px;
+  transition: 0.5s linear;
+}
+#project .projects_slider .projects_slider_dots li.slick-active button {
+  width: 26px;
+  background-color: var(--primary-1st-Color);
+}
+/*projects section end*/
+/*comment section start*/
+#comment .container {
+  box-shadow: 2px 2px 15px var(--Paragraph-Color);
+  background-color: var(--common-white);
+  padding-top: 5%;
+  padding-bottom: 5%;
+  margin-top: 80px;
+  border-radius: 20px;
+}
+
+#comment .container .row h3 {
+  color: var(--common-black);
+  border-bottom: 5px solid var(--primary-2nd-Color);
+  width: fit-content;
+  margin-bottom: 5%;
+  font-family: var(--primary-font);
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 50px;
+}
+#comment .container .row h3 span{
+  color: var(--primary-1st-Color);
+}
+#comment .container .row form input,
+#comment .container .row form textarea {
+  background-color: var(--primary-3d-Color);
+  border: 3px solid var(--primary-1st-Color);
+  color: var(--common-black);
+  border-radius: 20px;
+  padding: 14px 0 14px 20px;
+  margin-bottom: 24px;
+  resize: none;
+}
+
+#comment .container .row form input::placeholder,
+#comment .container .row form textarea::placeholder {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  color: var(--primary-2nd-Color);
+}
+
+#comment .container .row button {
+  color: var(--common-white);
+  background-color: var(--primary-1st-Color);
+  width: 180px;
+  height: 56px;
+  margin-top: 2%;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 30px;
+  text-align: center;
+  transition: 0.3s linear;
+  border: none;
+}
+
+#comment .container .row button:hover {
+  background-color: transparent;
+  color: var(--primary-1st-Color);
+  border: 3px solid var(--primary-1st-Color);
+  transform: scale(0.9);
+}
+/*comment section end*/
+/* Footer Section CSS Start */
+
+#footer_1 {
+  color: var(--common-white);
+  background-color: var(--common-black);
+  border: 3px solid var(--primary-1st-Color);
+  border-radius: 20px;
+  position: relative;
+  margin-top: 100px;
+  
+}
+#footer_1 .footer_main {
+  padding: 80px 0px;
+}
+#footer_1 .footer_main .footer_account {
+  padding-top: 58px;
+}
+#footer_1 .footer_main .footer_account .footer_account_img {
+  margin-top: -60px;
+  padding-bottom: 10px;
+}
+#footer_1 .footer_main .footer_account .footer_account_img img{
+  border-radius: 20px;
+}
+#footer_1 .footer_main .footer_account .footer_account_info {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  color: var(--common-white);
+  padding-bottom: 20px;
+}
+#footer_1 .footer_main .footer_account .social_icon_1 i {
+  padding-right: 24px;
+  font-size: 20px;
+  font-weight: 400;
+  transition: 0.67s;
+}
+#footer_1 .footer_main .footer_account .social_icon_1 i:hover {
+  color: var(--primary-1st-Color);
+}
+#footer_1 .footer_main .footer_account .content h2 {
+  color: var(--primary-1st-Color);
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 34px;
+  padding-bottom: 20px;
+}
+#footer_1 .footer_main .footer_account .content a {
+  display: block;
+  color: var(--common-white);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  padding-bottom: 7px;
+  transition: 0.67s;
+}
+#footer_1 .footer_main .footer_account .content a:hover {
+  color: var(--primary-1st-Color);
+}
+
+#footer_1 .footer_main .footer_account .contact_us h2 {
+  color: var(--primary-1st-Color);
+  font-size: 24px;
+  font-weight: 700;
+  padding-bottom: 20px;
+}
+#footer_1 .footer_main .footer_account .contact_us .contact_item i {
+  color: var(--primary-1st-Color);
+}
+#footer_1 .footer_main .footer_account .contact_us .contact_item a {
+  color: var(--common-white);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+}
+
+#footer_1 .footer_main .footer_account .news .input_sectioninput,
+#footer_1 .footer_main .footer_account .news .input_section button {
+  padding: 20px;
+  border: none;
+}
+
+/* Footer Section CSS End */
+/* last section css start */
+#last p{
+  background-color: var(--primary-3d-Color);
+  color: var(--primary-2nd-Color);
+  font-family: var(--scondary-font);
+  font-size: 20px;
+  font-weight: 500;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 15px 0;
+}
+
+/* last section css end */
+
+
+/*============= Home page end ================*/
